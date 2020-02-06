@@ -17,7 +17,7 @@ Target: Regression
 In order to understand the data set, it is best to look through and understand what the data types are of the different features as well as look at the amount of missing data that is in the set. I concluded that there was not much data missing, so then I created a correlation graph of all the numerical data. Below is a graph of the correlations I cared about exploring because of their relationship to sale price.
 
 Sale Price Correlation Plot from EDA
-![Correlations](Extra/Sale%20Price%20Correlations.png)
+![Correlations](Sale%20Price%20Correlations.png)
 
 Once I looked at correlations, I decided to create a model based solely on the features that had a positive correlation of .5 or more thinking that this would give me a high performing model because of the initial relationship. After creating this model, I explored the data further and created pairplots of all the numeric data in relation to sale price to get a better understanding of the shape of the data. It was in looking at the graphs that I found there were outliers that could have been hindering the performance of the model. So I decided to drop a couple of samples that had outliers in multiple features. Once I did this I also included all of the features that were numerical in order to work on the bias-variance trade-off and ultimately improve the model. After creating this model, I found that the scores for this model did improve from the first model I had created.
 
@@ -38,4 +38,4 @@ In order to make improvements to the model I created based on research, I decide
 
 In creating the different models, I found that researching what is important in a real world instance may not be the best at truly deciding what would be best for determining the sale price of a house. In this case the more information you have about different features on a house the better off your model will be. Creating a model with more features and perhaps including even more features such as information about nearest grocery stores, nearest schools, etc. could improve the model even more.  
 
-Also when investigating my lasso model coefficients to see what features had the most effect on the model. The engineered feature, above grade (ground) living area square feet times total square feet of basement area had the biggest effect on the model because practically this makes sense. If you are able to understand how much space is in a house and on each level it can only make the house that much more valuable. 
+Also when investigating my lasso model coefficients to see what features had the most effect on the model. The engineered feature, above grade (ground) living area square feet times total square feet of basement area had the biggest effect on the model because practically this makes sense. If you are able to understand how much space is in a house and on each level it can only make the house that much more valuable.
